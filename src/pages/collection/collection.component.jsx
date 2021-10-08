@@ -8,6 +8,7 @@ import "./collection.styles.css";
 
 const CollectionPage = ({ match }) => {
   const collections = useContext(CollectionsContext);
+  console.log("ID: ", match.params.collectionId);
   const collection = collections[match.params.collectionId];
   const { title, items } = collection;
 
